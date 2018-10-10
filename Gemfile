@@ -7,7 +7,6 @@ gem 'rails', '4.2.10'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
-  # gem 'sqlite3'
   gem 'pg', '~> 0.21'
   gem 'byebug'
   gem 'database_cleaner', '1.4.1'
@@ -22,7 +21,6 @@ group :test do
   gem 'cucumber-rails-training-wheels'
 end
 group :production do
-  # gem 'pg'
   gem 'pg', '~> 0.21'
 end
 
