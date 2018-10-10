@@ -21,10 +21,10 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
 end
-group :production do
-  gem 'pg'#, '~> 0.21'
-  # gem 'pg'
-end
+# group :production do
+#   gem 'pg'#, '~> 0.21'
+#   # gem 'pg'
+# end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,7 +36,7 @@ gem 'uglifier', '>= 2.7.1'
 
 gem 'jquery-rails'
 gem 'haml'
-# gem 'pg', '~> 0.21'
+gem 'pg', '~> 0.21'
 
 # Use unicorn as the web server
 # gem 'unicorn'
