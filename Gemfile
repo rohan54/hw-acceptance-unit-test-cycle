@@ -6,10 +6,10 @@ gem 'rails', '4.2.10'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
-# gem 'pg'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
+  # gem 'sqlite3'
   #gem 'pg', '~> 0.21'
   gem 'byebug'
   gem 'database_cleaner', '1.4.1'
@@ -25,7 +25,7 @@ group :test do
   gem 'simplecov', :require => false
 end
 group :production do
-  gem 'pg'#, '~> 0.21'
+  # gem 'pg'#, '~> 0.21'
   # gem 'pg'
 end
 
