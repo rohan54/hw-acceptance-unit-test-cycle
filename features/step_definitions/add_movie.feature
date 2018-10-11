@@ -1,4 +1,6 @@
 Feature: User can manually add a movie
+#   As a movie buff
+#   So that I can add new movies
 
 Scenario: Add a movie
   Given I am on the RottenPotatoes home page

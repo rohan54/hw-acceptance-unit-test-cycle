@@ -33,7 +33,7 @@ module NavigationHelpers
     when /^the Similar Movies page for "(.*)"/
       movie1 = Movie.find_by(title: $1)
       find_movies_by_director_path(movie1)
-    
+      
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
