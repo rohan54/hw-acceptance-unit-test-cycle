@@ -65,38 +65,9 @@ class MoviesController < ApplicationController
     @movie = Movie.find (params[:title])
     @similar_movies = Movie.find_by_director(@movie.director)
     if @similar_movies.nil?
-      flash[:notice] = "Director information is missing in \'#{@movie.title}\'"
+      flash[:notice] = " \'#{@movie.title}\' has no director info"
       redirect_to movies_path
     end
     return @similar_movies
   end
-  
-  # def find_movies_by_director
-  #   @movies= Movie.all#nil
-  #   # print("***************************************************I am in controller")
-  #   @movie = Movie.find (params[:title])
-  #   # b = @movie == nil
-  #   # print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-  #   # print(b)
-  #   @similar_movies = Movie.find_by_director(@movie.director)
-  #   if @similar_movies.nil?
-  #     flash[:notice] = "Director information is missing in \'#{@movie.title}\'"
-  #     redirect_to movies_path
-  #   end
-  #   return @similar_movies
-  # end
-
-  # def find_movies#(director)
-  #   Movie m1 = Movie.find(params[:id])
-  #   print("Hello")
-  #   print(m1.title)
-  # end
-  
-  # def find_movie_by_director
-  #   @similar_movies = Movie.similar_movies(params[:title])
-  #   if @similar_movies.nil?
-  #     redirect_to root_url, alert: "'#{params[:title]}' has no director info"
-  #   end
-  #   @movie = Movie.find_by(title: params[:title])
-  # end
 end

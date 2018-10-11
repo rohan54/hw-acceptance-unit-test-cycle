@@ -6,10 +6,4 @@ class Movie < ActiveRecord::Base
     return nil if director == "" || director == nil
     Movie.where(director: director)
   end
-  # def self.find_by_director(director)
-  #   #print("***************************************************I am in movie")
-  #   return nil if director == ""
-  #   #print("***************************************************I am out  movie")
-  #   Movie.where(director: director)
-  # end
 end
